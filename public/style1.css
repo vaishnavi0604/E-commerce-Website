@@ -1,0 +1,209 @@
+.nav{
+    background-color: white;
+    z-index: 9;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.16) ;
+}
+.nav_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.nav {
+    background-color: white;
+    z-index: 9;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;  /* Vertically center all elements */
+    justify-content: space-between;  /* Space between left content and right icons */
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, .16);
+}
+
+.logo {
+    margin-left: 10px;  /* Adds space between logo and links */
+}
+
+.nav_side {
+    display: flex;
+    justify-content: flex-start;  /* Align links to the left */
+    gap: 20px;  /* Space between the links */
+}
+
+.nav_side a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: cosmic, sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
+
+.nav_icons {
+    display: flex;
+    align-items: right;
+    gap: 20px;  /* Space between profile and cart icons */
+    margin-right: 20px;
+}
+
+.cart a img {
+    width: 40px;  /* Adjusts size of both icons */
+    cursor: pointer;  /* Shows pointer cursor on hover */
+}
+.cart a:hover img {
+    opacity: 0.8;  /* Adds a hover effect */
+    transition: opacity 0.3s;
+}
+
+/* Container for the product items */
+/* Product styling */
+.product_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    flex: 1 1 30%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item_content h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.item_content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+.prompt {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none; /* Hidden initially */
+    z-index: 1000; /* Make sure it appears above other elements */
+    text-align: center;
+}
+
+/* Cart styling */
+.cart-section {
+    display: none; /* Hidden initially */
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+#cart-count {
+    position: absolute;
+    top: 28px;
+    right:50px;
+    bottom:10px;
+    background-color: red;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    width: 10px; /* Fixed width for a round shape */
+    height: 10px; /* Fixed height for a round shape */
+    display: flex;
+    align-items: center; /* Vertically center the count number */
+    justify-content: center;
+}
+
+/* Cart items */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right;
+}
+
+#checkout-btn{
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#checkout-btn:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+
+/*#clear-cart-btn{
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}*/
+#clear-cart-btn{
+    font-size:15px;
+}
